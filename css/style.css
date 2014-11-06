@@ -55,6 +55,11 @@ p {
     height: auto;
 }
 
+.horizontaly-marged{
+    margin-left : 2em;
+    margin-right : 2em;
+    display: inline-block;
+}
 
 .irc{
     font-size: 18px;
@@ -77,9 +82,14 @@ a.irc:visited {
     position: absolute;
     top: 0;
     left: 0;
+    width:100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#header-bg img{
     min-width: 100%;
     min-height: 200px;
-    z-index: -1;
 }
 
 #header-container {
@@ -105,14 +115,15 @@ a.irc:visited {
     background-color: #a3c03d;
 }
 
-#footer {
+footer {
     font-size: 12px;
     background-color: white;
     text-align: center;
 }
 
+
 #google-logo {
-    max-height: 20px;
+    max-height: 30px;
 }
 
 .btn-default {
